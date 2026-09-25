@@ -1,0 +1,325 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Shahabuddin - Backend Engineer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">
+    <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+</head>
+
+<body>
+    <main class="main-homepage">
+        <!-- Header -->
+        <header class="header-area">
+            <div class="container">
+                <div class="gx-row d-flex align-items-center justify-content-between">
+                    <a href="index.html" class="logo">
+                        <img src="{% static 'portfolio/images/logo.svg' %}" alt="Logo">
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="menu">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="works.html">Works</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <a href="contact.html" class="theme-btn">Let's talk</a>
+                    </nav>
+                    <a href="contact.html" class="theme-btn">Let's talk</a>
+                    <div class="show-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About -->
+        <section class="about-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Profile -->
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-me-box shadow-box">
+                            <a class="overlay-link" href="about.html"></a>
+                            <!-- Original Image - unchanged -->
+                            <img src="{% static 'portfolio/images/bg1.png' %}" alt="BG" class="bg-img">
+                            <div class="img-box">
+                                <!-- Original Image - unchanged -->
+                                <img src="{% static 'portfolio/images/me.png' %}" alt="About Me">
+                            </div>
+
+                            <div class="infos">
+                                <h4>BACKEND ENGINEER</h4>
+                                <h1>Mohammad Shahabuddin.</h1>
+                                <p>PHP & Laravel Backend Engineer specializing in REST APIs, MySQL, MSSQL and scalable backend systems.</p>
+
+                                <a href="#" class="about-btn">
+                                    <img src="{% static 'portfolio/images/icon.svg' %}" alt="Button">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side -->
+                    <div class="col-md-6">
+                        <div class="about-credentials-wrap">
+                            <!-- Banner -->
+                            <div data-aos="zoom-in">
+                                <div class="banner shadow-box">
+                                    <div class="marquee">
+                                        <div>
+                                            <span>
+                                                BACKEND ENGINEER
+                                                <b>PHP &amp; LARAVEL</b>
+                                                <img src="{% static 'portfolio/images/star1.svg' %}" alt="Star">
+                                                BACKEND ENGINEER
+                                                <b>PHP &amp; LARAVEL</b>
+                                                <img src="{% static 'portfolio/images/star1.svg' %}" alt="Star">
+                                                REST API DEVELOPMENT
+                                                <b>DATABASE OPTIMIZATION</b>
+                                                <img src="{% static 'portfolio/images/star1.svg' %}" alt="Star">
+                                                REST API DEVELOPMENT
+                                                <b>DATABASE OPTIMIZATION</b>
+                                                <img src="{% static 'portfolio/images/star1.svg' %}" alt="Star">
+                                                SCALABLE BACKEND SYSTEMS
+                                                <b>PHP &amp; LARAVEL</b>
+                                                <img src="{% static 'portfolio/images/star1.svg' %}" alt="Star">
+                                                SCALABLE BACKEND SYSTEMS
+                                                <b>PHP &amp; LARAVEL</b>
+                                                <img src="{% static 'portfolio/images/star1.svg' %}" alt="Star">
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Credentials + Projects -->
+                            <div class="gx-row d-flex gap-24">
+                                <!-- Experience -->
+                                <div data-aos="zoom-in">
+                                    <div class="about-crenditials-box info-box shadow-box h-full">
+                                        <a class="overlay-link" href="credentials.html"></a>
+                                        <!-- Original Image - unchanged -->
+                                        <img src="{% static 'portfolio/images/bg1.png' %}" alt="BG" class="bg-img">
+                                        <!-- Original Image - unchanged -->
+                                        <img src="{% static 'portfolio/images/sign.png' %}" alt="Sign">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="infos">
+                                                <h4>professional experience</h4>
+                                                <h1>Experience</h1>
+                                            </div>
+
+                                            <a href="credentials.html" class="about-btn">
+                                                <img src="{% static 'portfolio/images/icon.svg' %}" alt="Button">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Projects -->
+                                <div data-aos="zoom-in">
+                                    <div class="about-project-box info-box shadow-box h-full">
+                                        <a class="overlay-link" href="works.html"></a>
+                                        <!-- Original Image - unchanged -->
+                                        <img src="{% static 'portfolio/images/bg1.png' %}" alt="BG" class="bg-img">
+                                        <!-- Original Image - unchanged -->
+                                        <img src="{% static 'portfolio/images/my-works.png' %}" alt="My Works">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="infos">
+                                                <h4>selected work</h4>
+                                                <h1>Projects</h1>
+                                            </div>
+
+                                            <a href="#" class="about-btn">
+                                                <img src="{% static 'portfolio/images/icon.svg' %}" alt="Button">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About / Skills / Profiles -->
+                <div class="row mt-24">
+                    <div class="col-md-12">
+                        <div class="blog-service-profile-wrap d-flex gap-24">
+                            <!-- about -->
+                            <div data-aos="zoom-in">
+                                <div class="about-blog-box info-box shadow-box h-full">
+                                    <a href="blog.html" class="overlay-link"></a>
+                                    <!-- Original Image - unchanged -->
+                                    <img src="{% static 'portfolio/images/bg1.png' %}" alt="BG" class="bg-img">
+                                    <!-- Original Image - unchanged -->
+                                    <img src="{% static 'portfolio/images/gfonts.png' %}" alt="GFonts">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>about me</h4>
+                                            <h1>Backend Engineer</h1>
+                                        </div>
+
+                                        <a href="blog.html" class="about-btn">
+                                            <img src="{% static 'portfolio/images/icon.svg' %}" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Services / Skills -->
+                            <div data-aos="zoom-in" class="flex-1">
+                                <div class="about-services-box info-box shadow-box h-full">
+                                    <a href="service.html" class="overlay-link"></a>
+                                    <!-- Original Image - unchanged -->
+                                    <img src="{% static 'portfolio/images/bg1.png' %}" alt="BG" class="bg-img">
+                                    <div class="icon-boxes">
+                                        <i class="iconoir-camera"></i>
+                                        <i class="iconoir-design-pencil"></i>
+                                        <i class="iconoir-color-filter"></i>
+                                        <i class="iconoir-dev-mode-phone"></i>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>technical expertise</h4>
+                                            <h1>Skills</h1>
+                                        </div>
+
+                                        <a href="service.html" class="about-btn">
+                                            <img src="{% static 'portfolio/images/icon.svg' %}" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Profiles -->
+                            <div data-aos="zoom-in">
+                                <div class="about-profile-box info-box shadow-box h-full">
+                                    <!-- Original Image - unchanged -->
+                                    <img src="{% static 'portfolio/images/bg1.png' %}" alt="BG" class="bg-img">
+                                    <div class="inner-profile-icons shadow-box">
+                                        <a href="#">
+                                            <i class="iconoir-dribbble"></i>
+                                        </a>
+
+                                        <a href="#">
+                                            <i class="iconoir-twitter"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="infos">
+                                            <h4>connect with me</h4>
+                                            <h1>Profiles</h1>
+                                        </div>
+
+                                        <a href="contact.html" class="about-btn">
+                                            <img src="{% static 'portfolio/images/icon.svg' %}" alt="Button">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistics / Contact -->
+                <div class="row mt-24">
+                    <!-- Statistics -->
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-client-box info-box shadow-box">
+                            <!-- Original Image - unchanged -->
+                            <img src="{% static 'portfolio/images/bg1.png' %}" alt="BG" class="bg-img">
+                            <div class="clients d-flex align-items-start gap-24 justify-content-center">
+                                <div class="client-item">
+                                    <h1>05+</h1>
+                                    <p>Years<br>Experience</p>
+                                </div>
+
+                                <div class="client-item">
+                                    <h1>20+</h1>
+                                    <p>REST APIs<br>Developed</p>
+                                </div>
+
+                                <div class="client-item">
+                                    <h1>15+</h1>
+                                    <p>Laravel<br>Applications</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-md-6" data-aos="zoom-in">
+                        <div class="about-contact-box info-box shadow-box">
+                            <a class="overlay-link" href="contact.html"></a>
+                            <!-- Original Image - unchanged -->
+                            <img src="{% static 'portfolio/images/bg1.png' %}" alt="BG" class="bg-img">
+                            <!-- Original Image - unchanged -->
+                            <img src="{% static 'portfolio/images/icon2.png' %}" alt="Icon" class="star-icon">
+                            <h1>Let's <br>build <span>together.</span></h1>
+
+                            <a href="#" class="about-btn">
+                                <img src="{% static 'portfolio/images/icon.svg' %}" alt="Button">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-area">
+            <div class="container">
+                <div class="footer-content text-center">
+                    <!-- Original Image - unchanged -->
+                    <a href="index.html" class="logo">
+                        <img src="{% static 'portfolio/images/logo.svg' %}" alt="Logo">
+                    </a>
+
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="works.html">Works</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                    <p class="copyright">
+                        &copy; Mohammad Shahabuddin. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="{% static 'portfolio/js/jquery-3.6.4.js' %}"></script>
+    <script src="{% static 'portfolio/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'portfolio/js/aos.js' %}"></script>
+    <script src="{% static 'portfolio/js/main.js' %}"></script>
+</body>
+</html>
